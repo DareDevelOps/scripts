@@ -14,7 +14,7 @@ $repoURI = Read-Host -Prompt 'Please enter the your Github repository name'
 New-Item -Path . -Name $repoName -ItemType Directory
 Set-Location -Path $repoName
 
-git init 
+git init .
 gh repo create $repoName -y -l MIT --public
 git remote add $repoName main $repoURI + \$repoName
 
