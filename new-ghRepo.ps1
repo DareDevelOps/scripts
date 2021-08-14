@@ -1,3 +1,12 @@
+<#
+.SYNOPSIS
+Automatically create a generic Github Repo.
+.DESCRIPTION
+.NOTES
+.EXAMPLE
+
+#>
+
 $repoName = read-host -Prompt "Provide a Repo name"
 
 New-Item -Path . -Name $repoName -ItemType Directory
