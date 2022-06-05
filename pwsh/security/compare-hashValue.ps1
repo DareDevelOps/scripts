@@ -33,7 +33,7 @@ function compare-HashValue {
      if ($hashValue -eq $fileHash) {
          'The file hash is good.'
      } else {
-         "The file hash does match please re-verify the downloaded software is good."
+         "The file hash does not match please re-verify the downloaded software is good."
      }
 } Set-Alias -name chv -Value compare-HashValue
 
