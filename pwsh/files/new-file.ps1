@@ -1,6 +1,8 @@
 # Function to create a new file
 
 function new-file {
+    [CmdletBinding()]
+    [Alias("nf")]
     param (
         [Parameter(Mandatory = $true)][String] $fileName,
         [Parameter(Mandatory = $true)][String]$fileExtension
@@ -8,4 +10,4 @@ function new-file {
     )
 
     New-Item -Path . -Name ("$fileName" + ".$fileExtension") -ItemType File
-} New-Alias  -Name nf -Value new-file
+}
